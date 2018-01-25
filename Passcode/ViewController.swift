@@ -31,6 +31,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onLogout(_ sender: Any) {
+        if AWSSignInManager.sharedInstance().isLoggedIn {
+            print("prepare to logout")
+            AWSSignInManager.sharedInstance().logout(completionHandler: {(result: Any?, error: Error?) in
+                let signInVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignInViewController")
+                self.present(signInVC, animated: true, completion: nil)
+            })
+        }
     }
     
 }

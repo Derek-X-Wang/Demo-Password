@@ -10,5 +10,6 @@ target 'Passcode' do
   pod 'AWSUserPoolsSignIn', '~> 2.6.6'
   pod 'AWSAuthUI', '~> 2.6.6'
   pod 'AWSDynamoDB', '~> 2.6.6'
+  pod 'AWSFacebookSignIn', '~> 2.6.6'
 
 end

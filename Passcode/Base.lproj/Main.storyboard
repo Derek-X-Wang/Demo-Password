@@ -123,15 +123,29 @@
                                     <action selector="onSignUp:" destination="mkl-0X-7mX" eventType="touchUpInside" id="xhi-eT-RBl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRW-EP-6RN">
+                                <rect key="frame" x="8" y="451" width="359" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7xd-nv-Hmt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Xb7-NG-t32" firstAttribute="trailing" secondItem="WRW-EP-6RN" secondAttribute="trailing" constant="8" id="4EZ-ix-ZtO"/>
                             <constraint firstItem="pzb-3G-FD1" firstAttribute="leading" secondItem="Xb7-NG-t32" secondAttribute="leading" constant="8" id="8Ju-vw-PbG"/>
                             <constraint firstItem="Xb7-NG-t32" firstAttribute="trailing" secondItem="S1A-Kc-yq7" secondAttribute="trailing" constant="8" id="A6s-lD-hyF"/>
                             <constraint firstItem="9GE-Iu-A56" firstAttribute="leading" secondItem="Xb7-NG-t32" secondAttribute="leading" constant="8" id="IUe-hw-EyG"/>
                             <constraint firstItem="9GE-Iu-A56" firstAttribute="centerX" secondItem="NT7-f7-B55" secondAttribute="centerX" id="OVq-a1-kPX"/>
                             <constraint firstItem="Xb7-NG-t32" firstAttribute="bottom" secondItem="S1A-Kc-yq7" secondAttribute="bottom" constant="20" id="QJh-TY-rOF"/>
                             <constraint firstItem="Q0U-fh-rfH" firstAttribute="leading" secondItem="Xb7-NG-t32" secondAttribute="leading" constant="8" id="SVm-DB-zZL"/>
+                            <constraint firstItem="WRW-EP-6RN" firstAttribute="leading" secondItem="Xb7-NG-t32" secondAttribute="leading" constant="8" id="Zjv-C1-AKY"/>
+                            <constraint firstItem="Q0U-fh-rfH" firstAttribute="top" secondItem="WRW-EP-6RN" secondAttribute="bottom" constant="8" id="bEc-jJ-v3k"/>
                             <constraint firstItem="9GE-Iu-A56" firstAttribute="top" secondItem="pzb-3G-FD1" secondAttribute="bottom" constant="40" id="i6j-Kc-HDu"/>
                             <constraint firstItem="9GE-Iu-A56" firstAttribute="centerY" secondItem="NT7-f7-B55" secondAttribute="centerY" constant="-70" id="tBC-uy-lcD"/>
                             <constraint firstItem="S1A-Kc-yq7" firstAttribute="leading" secondItem="Xb7-NG-t32" secondAttribute="leading" constant="8" id="tsZ-qm-Y4Z"/>
@@ -143,6 +157,7 @@
                         <viewLayoutGuide key="safeArea" id="Xb7-NG-t32"/>
                     </view>
                     <connections>
+                        <outlet property="facebookButton" destination="WRW-EP-6RN" id="VB5-nA-LJa"/>
                         <outlet property="phoneNumberTextField" destination="9GE-Iu-A56" id="l12-M2-3xh"/>
                         <segue destination="wSL-hf-4Ac" kind="show" identifier="SignUpConfirmSegue" id="MP9-mv-AEF"/>
                         <segue destination="EcC-hZ-aTX" kind="show" identifier="SignInConfirmSegue" id="Agj-b5-4AM"/>

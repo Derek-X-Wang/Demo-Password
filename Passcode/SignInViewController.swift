@@ -9,12 +9,15 @@
 import UIKit
 import AWSUserPoolsSignIn
 import AWSDynamoDB
+import AWSFacebookSignIn
 
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var phoneNumberTextField: KaedeTextField!
+    @IBOutlet weak var facebookButton: UIButton!
     
     var passwordAuthenticationCompletion: AWSTaskCompletionSource<AnyObject>?
+    var didCompleteSignIn: ((_ success: Bool) -> Void)? = nil
     var password: String?
     var sentTo: String?
     var pool: AWSCognitoIdentityUserPool?
@@ -24,6 +27,17 @@ class SignInViewController: UIViewController {
 
         self.pool = AWSCognitoIdentityUserPool.default()
         //self.pool?.delegate = self
+        
+        AWSFacebookSignInProvider.sharedInstance().setPermissions(["public_profile"])
+        // Facebook UI Setup
+        let facebookComponent = AWSFacebookSignInButton(frame: CGRect(x: 0, y: 0, width: facebookButton.frame.size.width, height: facebookButton.frame.size.height))
+        facebookComponent.buttonStyle = .large // use the large button style
+        facebookComponent.delegate = self // set delegate to respond to user actions
+        facebookButton.addSubview(facebookComponent)
+        didCompleteSignIn = { success in
+            print("FB login success")
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -132,6 +146,32 @@ class SignInViewController: UIViewController {
         }
         
         super.touchesBegan(touches , with:event)
+    }
+    
+    func showErrorDialog(_ loginProviderName: String, withError error: NSError) {
+        print("\(loginProviderName) failed to sign in w/ error: \(error)")
+        let alertController = UIAlertController(title: NSLocalizedString("Sign-in Provider Sign-In Error", comment: "Sign-in error for sign-in failure."), message: NSLocalizedString("\(loginProviderName) failed to sign in w/ error: \(error)", comment: "Sign-in message structure for sign-in failure."), preferredStyle: .alert)
+        let doneAction = UIAlertAction(title: NSLocalizedString("Ok", comment: "Label to cancel sign-in failure."), style: .cancel, handler: nil)
+        alertController.addAction(doneAction)
+        present(alertController, animated: true, completion: nil)
+    }
+
+}
+
+// fb login
+extension SignInViewController: AWSSignInDelegate {
+    // delegate handler for facebook / google sign in.
+    func onLogin(signInProvider: AWSSignInProvider, result: Any?, error: Error?) {
+        // dismiss view controller if no error
+        if error == nil {
+            print("Signed in with: \(signInProvider)")
+            self.presentingViewController?.dismiss(animated: true, completion: nil)
+            if let didCompleteSignIn = self.didCompleteSignIn {
+                didCompleteSignIn(true)
+            }
+            return
+        }
+        self.showErrorDialog(signInProvider.identityProviderName, withError: error as! NSError)
     }
 
 }
