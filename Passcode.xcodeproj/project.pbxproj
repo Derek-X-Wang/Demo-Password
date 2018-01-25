@@ -12,6 +12,14 @@
 		583ED8C320191F1A004F2415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583ED8C120191F1A004F2415 /* Main.storyboard */; };
 		583ED8C520191F1A004F2415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583ED8C420191F1A004F2415 /* Assets.xcassets */; };
 		583ED8C820191F1A004F2415 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583ED8C620191F1A004F2415 /* LaunchScreen.storyboard */; };
+		583ED8D020191FFE004F2415 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 583ED8CF20191FFE004F2415 /* awsconfiguration.json */; };
+		583ED8D22019358D004F2415 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583ED8D12019358D004F2415 /* SignInViewController.swift */; };
+		583ED8D42019365E004F2415 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583ED8D32019365E004F2415 /* ConfirmViewController.swift */; };
+		583ED8D6201937D9004F2415 /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583ED8D5201937D9004F2415 /* PasscodeViewController.swift */; };
+		583ED8D820194084004F2415 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583ED8D720194084004F2415 /* KaedeTextField.swift */; };
+		583ED8DA2019413D004F2415 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583ED8D92019413D004F2415 /* TextFieldEffects.swift */; };
+		583ED8DF2019436B004F2415 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583ED8DE2019436A004F2415 /* User.swift */; };
+		C0DF734E5A9C934A25A93407 /* Pods_Passcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B363E2375C9AFD4C8D3DCF /* Pods_Passcode.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,16 @@
 		583ED8C420191F1A004F2415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		583ED8C720191F1A004F2415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		583ED8C920191F1A004F2415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		583ED8CF20191FFE004F2415 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		583ED8D12019358D004F2415 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		583ED8D32019365E004F2415 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		583ED8D5201937D9004F2415 /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
+		583ED8D720194084004F2415 /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		583ED8D92019413D004F2415 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		583ED8DE2019436A004F2415 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9C82A07FDD7C9E5E6B7609C9 /* Pods-Passcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passcode/Pods-Passcode.release.xcconfig"; sourceTree = "<group>"; };
+		B7B363E2375C9AFD4C8D3DCF /* Pods_Passcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C691B3FDA8435DF5E412A020 /* Pods-Passcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passcode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Passcode/Pods-Passcode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DF734E5A9C934A25A93407 /* Pods_Passcode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				583ED8BC20191F1A004F2415 /* Passcode */,
 				583ED8BB20191F1A004F2415 /* Products */,
+				D27770CC70DD5AC68460F584 /* Pods */,
+				7A6E4FFE90A4E20688477585 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,62 @@
 		583ED8BC20191F1A004F2415 /* Passcode */ = {
 			isa = PBXGroup;
 			children = (
+				583ED8DB2019436A004F2415 /* AmazonAws */,
+				583ED8D92019413D004F2415 /* TextFieldEffects.swift */,
+				583ED8D720194084004F2415 /* KaedeTextField.swift */,
+				583ED8CF20191FFE004F2415 /* awsconfiguration.json */,
 				583ED8BD20191F1A004F2415 /* AppDelegate.swift */,
 				583ED8BF20191F1A004F2415 /* ViewController.swift */,
 				583ED8C120191F1A004F2415 /* Main.storyboard */,
 				583ED8C420191F1A004F2415 /* Assets.xcassets */,
 				583ED8C620191F1A004F2415 /* LaunchScreen.storyboard */,
 				583ED8C920191F1A004F2415 /* Info.plist */,
+				583ED8D12019358D004F2415 /* SignInViewController.swift */,
+				583ED8D32019365E004F2415 /* ConfirmViewController.swift */,
+				583ED8D5201937D9004F2415 /* PasscodeViewController.swift */,
 			);
 			path = Passcode;
+			sourceTree = "<group>";
+		};
+		583ED8DB2019436A004F2415 /* AmazonAws */ = {
+			isa = PBXGroup;
+			children = (
+				583ED8DC2019436A004F2415 /* Models */,
+			);
+			path = AmazonAws;
+			sourceTree = "<group>";
+		};
+		583ED8DC2019436A004F2415 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				583ED8DD2019436A004F2415 /* NoSQL */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		583ED8DD2019436A004F2415 /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				583ED8DE2019436A004F2415 /* User.swift */,
+			);
+			path = NoSQL;
+			sourceTree = "<group>";
+		};
+		7A6E4FFE90A4E20688477585 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B363E2375C9AFD4C8D3DCF /* Pods_Passcode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D27770CC70DD5AC68460F584 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C691B3FDA8435DF5E412A020 /* Pods-Passcode.debug.xcconfig */,
+				9C82A07FDD7C9E5E6B7609C9 /* Pods-Passcode.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 583ED8CC20191F1A004F2415 /* Build configuration list for PBXNativeTarget "Passcode" */;
 			buildPhases = (
+				B8A17E8B7254C85AA7B6DCD0 /* [CP] Check Pods Manifest.lock */,
 				583ED8B620191F1A004F2415 /* Sources */,
 				583ED8B720191F1A004F2415 /* Frameworks */,
 				583ED8B820191F1A004F2415 /* Resources */,
+				EAEA726F8F96399BDFCA14E1 /* [CP] Embed Pods Frameworks */,
+				C69B8971C5463DD6DDF09306 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583ED8D020191FFE004F2415 /* awsconfiguration.json in Resources */,
 				583ED8C820191F1A004F2415 /* LaunchScreen.storyboard in Resources */,
 				583ED8C520191F1A004F2415 /* Assets.xcassets in Resources */,
 				583ED8C320191F1A004F2415 /* Main.storyboard in Resources */,
@@ -131,13 +204,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B8A17E8B7254C85AA7B6DCD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Passcode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C69B8971C5463DD6DDF09306 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Passcode/Pods-Passcode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAEA726F8F96399BDFCA14E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Passcode/Pods-Passcode-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Passcode/Pods-Passcode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		583ED8B620191F1A004F2415 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583ED8DA2019413D004F2415 /* TextFieldEffects.swift in Sources */,
+				583ED8D820194084004F2415 /* KaedeTextField.swift in Sources */,
 				583ED8C020191F1A004F2415 /* ViewController.swift in Sources */,
 				583ED8BE20191F1A004F2415 /* AppDelegate.swift in Sources */,
+				583ED8DF2019436B004F2415 /* User.swift in Sources */,
+				583ED8D6201937D9004F2415 /* PasscodeViewController.swift in Sources */,
+				583ED8D22019358D004F2415 /* SignInViewController.swift in Sources */,
+				583ED8D42019365E004F2415 /* ConfirmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +419,7 @@
 		};
 		583ED8CD20191F1A004F2415 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C691B3FDA8435DF5E412A020 /* Pods-Passcode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +435,7 @@
 		};
 		583ED8CE20191F1A004F2415 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C82A07FDD7C9E5E6B7609C9 /* Pods-Passcode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
