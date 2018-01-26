@@ -19,6 +19,9 @@
 		583ED8D820194084004F2415 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583ED8D720194084004F2415 /* KaedeTextField.swift */; };
 		583ED8DA2019413D004F2415 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583ED8D92019413D004F2415 /* TextFieldEffects.swift */; };
 		583ED8DF2019436B004F2415 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583ED8DE2019436A004F2415 /* User.swift */; };
+		58B03313201AF9B70050D952 /* PCContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B03312201AF9B70050D952 /* PCContact.swift */; };
+		58B03315201B18900050D952 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B03314201B18900050D952 /* Helpers.swift */; };
+		58B03317201B25D20050D952 /* AWSContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B03316201B25D20050D952 /* AWSContactManager.swift */; };
 		C0DF734E5A9C934A25A93407 /* Pods_Passcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B363E2375C9AFD4C8D3DCF /* Pods_Passcode.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		583ED8D720194084004F2415 /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
 		583ED8D92019413D004F2415 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
 		583ED8DE2019436A004F2415 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		58B03312201AF9B70050D952 /* PCContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCContact.swift; sourceTree = "<group>"; };
+		58B03314201B18900050D952 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		58B03316201B25D20050D952 /* AWSContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSContactManager.swift; sourceTree = "<group>"; };
 		9C82A07FDD7C9E5E6B7609C9 /* Pods-Passcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passcode/Pods-Passcode.release.xcconfig"; sourceTree = "<group>"; };
 		B7B363E2375C9AFD4C8D3DCF /* Pods_Passcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C691B3FDA8435DF5E412A020 /* Pods-Passcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passcode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Passcode/Pods-Passcode.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 				583ED8D12019358D004F2415 /* SignInViewController.swift */,
 				583ED8D32019365E004F2415 /* ConfirmViewController.swift */,
 				583ED8D5201937D9004F2415 /* PasscodeViewController.swift */,
+				58B03314201B18900050D952 /* Helpers.swift */,
+				58B03316201B25D20050D952 /* AWSContactManager.swift */,
 			);
 			path = Passcode;
 			sourceTree = "<group>";
@@ -111,6 +119,7 @@
 		583ED8DD2019436A004F2415 /* NoSQL */ = {
 			isa = PBXGroup;
 			children = (
+				58B03312201AF9B70050D952 /* PCContact.swift */,
 				583ED8DE2019436A004F2415 /* User.swift */,
 			);
 			path = NoSQL;
@@ -288,11 +297,14 @@
 				583ED8DA2019413D004F2415 /* TextFieldEffects.swift in Sources */,
 				583ED8D820194084004F2415 /* KaedeTextField.swift in Sources */,
 				583ED8C020191F1A004F2415 /* ViewController.swift in Sources */,
+				58B03315201B18900050D952 /* Helpers.swift in Sources */,
 				583ED8BE20191F1A004F2415 /* AppDelegate.swift in Sources */,
 				583ED8DF2019436B004F2415 /* User.swift in Sources */,
 				583ED8D6201937D9004F2415 /* PasscodeViewController.swift in Sources */,
 				583ED8D22019358D004F2415 /* SignInViewController.swift in Sources */,
 				583ED8D42019365E004F2415 /* ConfirmViewController.swift in Sources */,
+				58B03313201AF9B70050D952 /* PCContact.swift in Sources */,
+				58B03317201B25D20050D952 /* AWSContactManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
